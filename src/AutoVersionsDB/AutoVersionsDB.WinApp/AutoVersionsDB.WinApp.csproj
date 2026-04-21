@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net11.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>AppIcon.ico</ApplicationIcon>
     <Platforms>AnyCPU;x64;x86</Platforms>
@@ -13,6 +13,7 @@
     <PackageIcon>AppIcon.ico</PackageIcon>
     <RepositoryUrl>https://github.com/modi-w/AutoVersionsDB</RepositoryUrl>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <NoWarn>$(NoWarn); WFO1000</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
